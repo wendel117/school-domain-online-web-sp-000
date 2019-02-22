@@ -11,7 +11,7 @@ def name
   @name
 end
 
-def add_student(name, year)
+def add_student(name, grade)
 
 end
 
