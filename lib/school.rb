@@ -8,18 +8,17 @@ class School
   end
 
   def add_student(name, grade)
-    #if @roster[grade] # is @roster[grade] already an array?
       @roster[grade] << name
     end
 
   def grade(grade)
     @roster[grade]
-  end # end grade
+  end
 
   def sort
     @roster.each do |grade, students|
       students.sort!
     end
-  end # end sort
+  end
 
-end # end class
+end 
