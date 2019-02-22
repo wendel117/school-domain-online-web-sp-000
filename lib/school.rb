@@ -1,25 +1,29 @@
-
 class School
-attr_accessor :roster, :name, :grade
 
-def initialize(name)
-  @name = name
-  @roster = Hash.new
-end
+  attr_accessor :roster, :name, :grade
 
-def name
-  @name
-end
+  def initialize(name, roster={})
+    @name = name
+    @roster = Hash.new{ |hash,key| hash[key] = [] } # intiatilizing an emtpty array with a default empty hash
+  end
 
-def add_student(name, grade)
-  @roster[grade] << name
-end
+  def add_student(name, grade)
+    #if @roster[grade] # is @roster[grade] already an array?
+      @roster[grade] << name
+      # binding.pry
+    #else
+    #  @roster[grade] = [name]
+    #end
+  end # end add_student
 
-def grade
-end
+  def grade(grade)
+    @roster[grade]
+  end # end grade
 
-def sort
-end
+  def sort
+    @roster.each do |grade, students|
+      students.sort!
+    end
+  end # end sort
 
-
-end
+end # end class
