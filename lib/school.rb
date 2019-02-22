@@ -15,4 +15,11 @@ def add_student(name, year)
 
 end
 
+def grade
+end
+
+def sort
+end
+
+
 end
