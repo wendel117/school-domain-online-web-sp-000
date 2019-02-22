@@ -1,7 +1,7 @@
 # code here!
 class School
 
-roster = []
+roster = {}
 def initialize(name)
   @name = name
 
