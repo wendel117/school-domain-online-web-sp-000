@@ -27,4 +27,3 @@ class School
   def sort_students(year)
    grade(year).sort
   end
-
