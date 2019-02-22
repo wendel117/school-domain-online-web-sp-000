@@ -2,14 +2,14 @@
 class School
 attr_reader :name
 
-ROSTER = []
+ROSTERS = []
 def initialize(name)
   @name = name
 end
 
 def roster=(roster)
   @roster = roster
-  ROSTER << roster
+  ROSTERS << roster
 end
 
 end
