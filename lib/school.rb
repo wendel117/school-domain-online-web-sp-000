@@ -7,5 +7,8 @@ def initialize(name)
   @roster = Hash.new
 end
 
+def name
+  @name 
+end
 
 end
