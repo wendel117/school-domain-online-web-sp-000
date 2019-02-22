@@ -4,7 +4,7 @@ class School
 
   def initialize(name, roster={})
     @name = name
-    @roster = Hash.new{ |hash,key| hash[key] = [] } # intiatilizing an emtpty array with a default empty hash
+    @roster = Hash.new# intiatilizing an emtpty array with a default empty hash
   end
 
   def add_student(name, grade)
