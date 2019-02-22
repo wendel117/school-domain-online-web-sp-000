@@ -10,11 +10,7 @@ class School
   def add_student(name, grade)
     #if @roster[grade] # is @roster[grade] already an array?
       @roster[grade] << name
-      # binding.pry
-    #else
-    #  @roster[grade] = [name]
-    #end
-  end # end add_student
+    end
 
   def grade(grade)
     @roster[grade]
