@@ -2,7 +2,7 @@ class School
 
   attr_accessor :roster, :name, :grade
 
-  def initialize(name, roster={})
+  def initialize(name, roster)
     @name = name
     @roster = Hash.new{ |hash,key| hash[key] = [] } # intiatilizing an emtpty array with a default empty hash
   end
