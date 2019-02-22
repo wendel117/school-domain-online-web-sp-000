@@ -1,10 +1,13 @@
-# code here!
+require 'fis/test'
+
+
 class School
+
   attr_accessor :roster
 
   def initialize(name)
     @name = name
-    @roster = Hash.new
+    @roster = Hash.new { |h,k| h[k] = []}
   end
 
   def add_student(name, year)
@@ -25,4 +28,3 @@ class School
    grade(year).sort
   end
 
-end
