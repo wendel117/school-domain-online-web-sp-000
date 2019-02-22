@@ -6,7 +6,7 @@ class School
     @name = name
     @roster = Hash.new{ |hash,key| hash[key] = [] } # intiatilizing an emtpty array with a default empty hash
   end
-
+  
   def add_student(name, grade)
       @roster[grade] << name
     end
