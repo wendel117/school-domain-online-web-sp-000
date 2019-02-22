@@ -6,3 +6,4 @@ def initialize(name)
   ROSTER = []
 end
 end
+end
